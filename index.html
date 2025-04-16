@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bookstore</title>
-    <script src="./scripts/db.js"></script>
-    <script src="./scripts/templates.js"></script>
-    <script src="./scripts/script.js"></script>
-    <link rel="stylesheet" href="styles/style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main id="main_container">
-      <section id="content" class="content"></section>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bookstore</title>
+        <script src="/scripts/db.js"></script>
+        <script src="/scripts/templates.js"></script>
+        <script src="/scripts/script.js"></script>
+        <link rel="stylesheet" href="styles/style.css" />
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+        </style>
+    </head>
+    <body onload="init()">
+        <header>
+            <h1>Der BookPalace</h1>
+        </header>
+        <main id="main_container">
+            <h2>Meine Lieblingsbücher</h2>
+            <section id="content" class="contentlist"></section>
+        </main>
+        <footer></footer>
+    </body>
 </html>
