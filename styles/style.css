@@ -5,7 +5,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: Josefin_Sans;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 body {
@@ -31,12 +31,89 @@ header {
     }
 }
 
-main {
+#main_container {
     width: 100%;
     height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 0 140px;
+    padding: 0 100px;
+
+    h2 {
+        padding-top: 30px;
+    }
+
+    #content {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding-top: 30px;
+
+        .book_container {
+            width: 400px;
+            margin-bottom: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: rgb(114, 114, 79) 4px solid;
+            border-radius: 10px;
+            background-color: rgb(201, 194, 184);
+
+            img {
+                display: flex;
+                align-items: center;
+                width: 340px;
+                object-fit: cover;
+                border-radius: 10px;
+            }
+
+            #like {
+                width: 340px;
+                height: 30px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                cursor: pointer;
+
+                p {
+                    display: flex;
+                    justify-content: flex-end;
+                    gap: 10px;
+                    height: 30px;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        bottom: 10px;
+                    }
+                }
+            }
+
+            .bcomm {
+                left: 10px;
+                width: 350px;
+                height: 150px;
+                margin-bottom: 12px;
+                overflow-y: scroll;
+
+                p {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+
+.overlayhg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.d_none {
+    display: none;
 }
