@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Bookstore</title>
-        <script src="scripts/db.js"></script>
-        <script src="scripts/templates.js"></script>
-        <script src="scripts/script.js"></script>
-        <link rel="stylesheet" href="styles/style.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookstore</title>
+    <script src="scripts/db.js"></script>
+    <script src="scripts/templates.js"></script>
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style.css" />
 
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
-        </style>
-        <link rel="shortcut icon" href="img/bookpalace_logo.png" type="image" />
-    </head>
-    <body onload="init()">
-        <div
-            id="overlay"
-            class="overlayhg d_none"
-            onclick="toggleClose()"
-        ></div>
-        <header>
-            <h1>Der BookPalace</h1>
-        </header>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+    </style>
+    <link rel="shortcut icon" href="img/bookpalace_logo.png" type="image" />
+  </head>
+  <body onload="init()">
+    <div id="overlay" class="overlayhg d_none" onclick="toggleClose()"></div>
+    <header>
+      <div id="logo_header">
+        <img class="logo" src="img/bookpalace_logo.png" alt="" />
+        <h1>BookPalace</h1>
+      </div>
+    </header>
 
-        <main id="main_container">
-            <h2>Meine Lieblingsbücher</h2>
-            <section id="content" class="contentlist"></section>
-        </main>
-        <footer></footer>
-    </body>
+    <main id="main_container">
+      <section id="content" class="contentlist"></section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
